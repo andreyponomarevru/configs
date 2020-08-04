@@ -1,0 +1,12 @@
+.grid-auto-col {
+  display: grid;
+  /*  if you have too big root font size, change '14rem' to the more appropriate value cause on small screens such wide columns (for instance in case of 36rem font size, minmax(18em, 1fr) will make the minimum column width about 450px; such columns will overflow the window creating a horizontal bar) */
+  grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+  grid-gap: 0.8rem 6%;
+
+  & > * {
+    background-color: $color_gray-lighten;
+    padding: 1em;
+    text-align: center;
+  }
+}

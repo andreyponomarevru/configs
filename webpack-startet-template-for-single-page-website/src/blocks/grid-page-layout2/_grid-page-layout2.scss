@@ -1,0 +1,45 @@
+.grid-page-layout2 {
+  display: grid;
+  grid-template-rows: 10em minmax(10em, 1fr) 10em;
+  grid-template-columns: repeat(4, 2em) 5em 1fr 1fr 5em repeat(4, 2em);
+  grid-template-areas:
+    '. . . . header    header  header  header    . . . .'
+    '. . . . l-sidebar content content r-sidebar . . . .'
+    '. . . . l-sidebar footer  footer  footer    . . . .';
+
+  overflow: hidden;
+
+  &__one {
+    grid-area: header; /* we can also use grid-row/grid-column properties instead of grid-area, this is just two diferent ways of assigning grid items to spicific places. */
+
+    background-color: pink;
+  }
+
+  &__two {
+    /* Here, instead of 'grid-area' we will use more flexible properties 'grid-row and grid-columns. With the help of these properties we will attach grid area and make it overlap another grid area*/
+    /*grid-area: l-sidebar; - disable*/
+    grid-row: header / span 3;
+    grid-column: l-sidebar-start / l-sidebar-end; /* could be written less verbous: l-sidebar */
+
+    background-color: brown;
+    opacity: 0.5;
+  }
+
+  &__three {
+    grid-area: content;
+
+    background-color: grey;
+  }
+
+  &__four {
+    grid-area: r-sidebar;
+
+    background-color: aqua;
+  }
+
+  &__five {
+    grid-area: footer;
+
+    background-color: burlywood;
+  }
+}

@@ -1,0 +1,23 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch Program",
+      "args": ["--experimental-modules", "${workspaceFolder}/app.mjs"],
+      "env": {
+        "POSTGRESQL_CONNECT": "models/postgresql.yaml",
+        "NOTES_MODEL": "postgresql",
+        "USER_SERVICE_URL": "http://localhost:3333",
+        "DEBUG": "notes:*"
+      }
+      "skipFiles": [
+        "<node_internals>/**"
+      ]
+    }
+  ]
+}
