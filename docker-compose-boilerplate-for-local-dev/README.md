@@ -2,12 +2,12 @@
 
 `docker-compose.yml` includes containers for the following services:
 
-- Nginx&ast;
-- Node.js 
-- Node.js
-- PostgreSQL&ast;&ast;
-- Redis
-- PHP + Apache
+* Nginx
+* Node.js 
+* Node.js
+* PostgreSQL
+* Redis
+* PHP + Apache
 
 > before running Nginx, setup the configuration of virtual servers in `nginx/conf.d/`. There are several boilerplate config files in this folder - edit or replace them with your own. If you won't do this, Nginx will be unable to start, cause the current config files contain conflicting settings (intentionally)
 

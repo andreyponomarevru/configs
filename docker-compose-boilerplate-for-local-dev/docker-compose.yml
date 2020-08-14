@@ -26,7 +26,7 @@ services:
       - ./app2/:/opt/app2/
     #depends_on:
       # - nodejs-app1
-    # port:
+    # ports:
       # node.js process is listening for a debugging client (e.g. vscode debugger) on
       # - 9229:9229
     expose:

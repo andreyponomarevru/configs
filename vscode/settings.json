@@ -1,0 +1,9 @@
+{
+    "workbench.colorTheme": "Monokai",
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.tabSize": 2,
+    "editor.parameterHints.enabled": false,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "html.suggest.html5": false,
+    "eslint.alwaysShowStatus": true,
+}
