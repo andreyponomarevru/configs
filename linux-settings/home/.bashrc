@@ -2,6 +2,11 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
+# always automatically open tmux (https://unix.stackexchange.com/questions/43601/how-can-i-set-my-default-shell-to-start-up-tmux)
+if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
+  exec tmux
+fi
+
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
@@ -136,3 +141,6 @@ alias ll='ls -l --color=auto'
 export XDEBUG_CONFIG="idekey=VSCODE"
 
 export PATH="$HOME/.symfony/bin:$PATH"
+
+
+
