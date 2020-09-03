@@ -7,3 +7,4 @@ npm-debug.log
 Dockerfile
 doc/
 .vscode/
+_source

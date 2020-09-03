@@ -31,8 +31,6 @@
     "babel-core": "^6.26.3",
     "babel-loader": "^8.0.5",
     "babel-preset-env": "^1.7.0",
-    "biscuit-blocks-lib": "^1.0.1",
-    "biscuit-components": "^1.0.3",
     "copy-webpack-plugin": "^5.0.4",
     "css-loader": "^2.1.1",
     "cssnano": "^4.1.10",

@@ -1,9 +1,29 @@
 {
+    "git.enabled": false,
     "workbench.colorTheme": "Monokai",
-    "editor.wordWrap": "wordWrapColumn",
     "editor.tabSize": 2,
-    "editor.parameterHints.enabled": false,
-    "editor.suggest.snippetsPreventQuickSuggestions": false,
-    "html.suggest.html5": false,
+    "html.format.wrapLineLength": 80,
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.renderControlCharacters": false,
+    "editor.detectIndentation": false,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "editor.renderWhitespace": "none",
+    "debug.node.autoAttach": "on",
+    "editor.minimap.enabled": true,
+    "breadcrumbs.enabled": false,
+    "markdown.extension.syntax.plainTheme": true,
+    "markdown.extension.tableFormatter.enabled": false,
+    "markdown-preview-enhanced.automaticallyShowPreviewOfMarkdownBeingEdited": true,
+    "markdown-preview-enhanced.previewTheme": "atom-dark.css",
+    "markdown-preview-enhanced.mathRenderingOnlineService": "https://latex.codecogs.com/svg.latex",
+    "markdown-preview-enhanced.revealjsTheme": "black.css",
+    "markdown-preview-enhanced.mermaidTheme": "forest",
+    "extensions.ignoreRecommendations": true,
+    "eslint.format.enable": true,
+    "update.showReleaseNotes": false,
+    "explorer.confirmDragAndDrop": false,
     "eslint.alwaysShowStatus": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    }
 }
