@@ -25,5 +25,9 @@
     "eslint.alwaysShowStatus": true,
     "editor.codeActionsOnSave": {
         "source.fixAll.eslint": true
-    }
+    },
+    "files.autoSave": "off",
+    "eslint.lintTask.enable": true,
+    "eslint.debug": true,
+    "editor.formatOnSave": true
 }

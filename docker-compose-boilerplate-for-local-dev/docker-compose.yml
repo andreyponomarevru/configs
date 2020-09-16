@@ -23,6 +23,7 @@ services:
     build: ./app2
     restart: unless-stopped
     volumes:
+      # the part `:/opt/app2/` should always match the WORKDIR path mentioned in ./app2/Dockerfile 
       - ./app2/:/opt/app2/
     #depends_on:
       # - nodejs-app1
@@ -38,6 +39,7 @@ services:
     build: ./app1
     restart: unless-stopped
     volumes:
+      # the part `:/opt/app1/` should always match the WORKDIR path mentioned in ./app1/Dockerfile 
       - ./app1/:/opt/app1/
     env_file:
       - ./nodejs-app1.env

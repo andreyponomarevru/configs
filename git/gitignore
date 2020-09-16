@@ -1,6 +1,6 @@
-######################
-####### Docker ####### 
-######################
+################################
+####### Project-specific ####### 
+################################
 
 postgres-db/volume/
 redis_data/
@@ -28,7 +28,6 @@ redis_data/
 ### Visual Studio Code files ###
 ################################
 
-.vscode/*
 *.code-workspace
 
 ######################
@@ -73,8 +72,3 @@ _source/
 !.eslintignore
 
 !.dockerignore
-
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
