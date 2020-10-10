@@ -17,7 +17,7 @@ function webpackConfig(env, options) {
     },
     devtool: "inline-source-map",
     output: {
-      path: path.resolve(__dirname + "/dist"),
+      path: path.resolve(__dirname, "/dist"),
       filename: "scripts.[contenthash].js",
       publicPath: "./",
     },
