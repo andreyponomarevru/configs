@@ -6,3 +6,5 @@ volume/
 *.log
 
 log/
+node_modules/
+package-lock.json
