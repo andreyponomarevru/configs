@@ -1,6 +1,6 @@
 // const express = require("express");
 import express from "express";
-import { exampleRouter } from "./example.router";
+import { exampleRouter } from "./routes/example.router";
 
 const { PORT, NAME } = process.env;
 
