@@ -2,7 +2,7 @@
 ####### Project-specific ####### 
 ################################
 
-postgres-db/volume/
+volume/
 redis_data/
 
 ######################
@@ -49,6 +49,7 @@ redis_data/
 
 *.env
 *.log
+log/
 *~
 ~*
 .*
@@ -56,8 +57,11 @@ package-lock.json
 .goutputstream-*
 node_modules/
 dist/
-log/
 _source/
+
+# SSL certificate files
+*.crt
+*.key
 
 ###########################################################
 ### Whitelisted Files (track these files if they exist) ###

@@ -1,11 +1,78 @@
+################################
+####### Project-specific ####### 
+################################
+
 volume/
+redis_data/
+
+######################
+### Compiled files ###
+######################
+
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+##################################
+### Vim session and temp files ###
+##################################
+
+*.vim
+*.swo
+*.swp
+
+################################
+### Visual Studio Code files ###
+################################
+
+*.code-workspace
+
+######################
+### Packaged files ###
+######################
+
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+#############
+### Other ###
+#############
+
+*.env
+*.log
+log/
+*~
+~*
+.*
+package-lock.json
+.goutputstream-*
+node_modules/
+dist/
+_source/
 
 # SSL certificate files
 *.crt
 *.key
-*.log
 
-log/
-node_modules/
-package-lock.json
-*.env
+###########################################################
+### Whitelisted Files (track these files if they exist) ###
+###########################################################
+
+!.gitignore
+!.gitattributes
+
+!.prettierrc
+
+!.eslintrc.js
+!.eslintignore
+
+!.dockerignore
