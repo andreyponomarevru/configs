@@ -32,10 +32,7 @@
     "babel-loader": "^8.0.5",
     "babel-preset-env": "^1.7.0",
     "biscuit-components": "^1.0.4",
-<<<<<<< HEAD
-=======
     "clean-webpack-plugin": "^2.0.2",
->>>>>>> ff210c36f9d37106cc983a0a1205b8fad1b4193c
     "copy-webpack-plugin": "^5.0.4",
     "css-loader": "^2.1.1",
     "cssnano": "^4.1.10",
