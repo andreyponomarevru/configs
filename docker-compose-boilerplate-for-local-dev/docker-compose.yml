@@ -2,6 +2,19 @@ version: '3'
 
 services:
 
+  client:
+    container_name: client
+    build: ./client
+    restart: "always"
+    volumes:
+      - ./client/:/opt/client/
+      - /app/node_modules/
+    env_file:
+      - ./common.env
+      - ./client.env
+    expose:
+      - 3000
+
   nginx: 
     container_name: nginx
     build: ./nginx
