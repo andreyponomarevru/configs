@@ -1,11 +1,12 @@
 version: "3.7"
 
 services:
+
   web-server:
-    build:
-      context: .
-      dockerfile: ./example-web-server/Dockerfile.dev
     container_name: example-web-server
+    build:
+      context: ./example-web-server
+      dockerfile: Dockerfile.dev
     volumes:
       - ./example-web-server/src:/home/node/app/src
       - ./example-web-server/tsconfig.json:/home/node/app/tsconfig.json
