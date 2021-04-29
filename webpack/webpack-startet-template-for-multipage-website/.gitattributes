@@ -1,3 +1,0 @@
-# https://stackoverflow.com/questions/34713765/github-changes-repository-to-wrong-language
-* linguist-vendored
-*.scss linguist-vendored=false
