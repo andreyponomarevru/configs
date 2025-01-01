@@ -5,4 +5,6 @@ Before using it, change all properties, setting them according to your project n
 
 * `launch3.json` is same as `launch.json` but without ES6 Modules support
 
-* `settings.json` (put it in `~/.comfig/Code/User/`) contains all global VS Code settings 
+* `settings.json` (put it in `~/.config/Code/User/`) contains all global VS Code settings 
+
+* **`2024.code-profile` includes `settings.json` + all plugin settings, so this is what you should try to use in the first place.** Import it in VScode using Settings > Profile > Import
